@@ -4,11 +4,11 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class AppTest {
+class ApplicationTest {
 
     @Test
     void appHasAGreeting() {
-        App app = new App();
-        assertNotNull(app.getGreeting(), "app should have a greeting");
+        Application application = new Application();
+        assertNotNull(application.getGreeting(), "application should have a greeting");
     }
 }
