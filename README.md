@@ -7,4 +7,5 @@ java-gradle-quickstart is a template repository to bootstrap a new Java applicat
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
-- Renovate for dependencies update 
+- Renovate for dependencies update
+- GitHub workflow for running tests
