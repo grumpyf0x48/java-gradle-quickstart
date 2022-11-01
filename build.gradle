@@ -32,7 +32,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'org.grumpyf0x48.pkg.Application'
+    mainClass = 'org.grumpyf0x48.myapplication.Application'
 }
 
 tasks.named('test') {
