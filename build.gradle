@@ -17,6 +17,12 @@ application {
     mainClass = 'org.grumpyf0x48.myapplication.Application'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 repositories {
     mavenCentral()
 }
