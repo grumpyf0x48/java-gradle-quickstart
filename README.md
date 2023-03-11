@@ -14,11 +14,18 @@ application using:
 - Renovate for dependencies update
 - GitHub workflow for running tests
 
-Usage:
+## Run application
 
 ```shell
 ./gradlew run
 
 > Task :run
+Hello World!
+```
+
+```shell
+./gradlew nativeRun
+
+> Task :nativeRun
 Hello World!
 ```
