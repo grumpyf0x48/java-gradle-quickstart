@@ -12,3 +12,12 @@ application using:
 - EditorConfig for code formatting
 - Renovate for dependencies update
 - GitHub workflow for running tests
+
+Usage:
+
+```shell
+./gradlew run
+
+> Task :run
+Hello World!
+```
