@@ -5,7 +5,7 @@
 java-gradle-quickstart is a template repository to bootstrap a new Java application using:
 
 - Java 17
-- Gradle 8 for build
+- Gradle 8 with Kotlin DSL for build
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
