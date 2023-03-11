@@ -28,3 +28,7 @@ repositories {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+graalvmNative {
+    toolchainDetection.set(false)
+}
