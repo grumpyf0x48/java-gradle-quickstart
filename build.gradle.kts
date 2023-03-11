@@ -5,10 +5,10 @@ plugins {
 
 version = "0.1-SNAPSHOT"
 
-val junitVersion = "5.9.2"
+val junitVersion: String by project
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:$junitVersion")
+    testImplementation("org.junit.jupiter:junit-jupiter:${junitVersion}")
 }
 
 application {
