@@ -2,7 +2,8 @@
 
 [![Build](https://github.com/grumpyf0x48/java-gradle-quickstart/actions/workflows/gradle.yml/badge.svg)](https://github.com/grumpyf0x48/java-gradle-quickstart/actions/workflows/gradle.yml)
 
-java-gradle-quickstart is a template repository to bootstrap a new Java application using:
+java-gradle-quickstart is a template repository to bootstrap a new Java
+application using:
 
 - Java 17
 - Gradle 8 with Kotlin DSL for build
