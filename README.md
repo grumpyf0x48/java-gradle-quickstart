@@ -7,6 +7,7 @@ application using:
 
 - Java 17
 - Gradle 8 with Kotlin DSL for build
+- GraalVM for native build
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
