@@ -21,14 +21,6 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 
-repositories {
-    mavenCentral()
-}
-
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
-
 graalvmNative {
     toolchainDetection.set(false)
     binaries {
@@ -36,4 +28,12 @@ graalvmNative {
             resources.autodetect()
         }
     }
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
 }
