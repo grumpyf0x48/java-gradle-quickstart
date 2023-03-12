@@ -7,17 +7,25 @@ application using:
 
 - Java 17
 - Gradle 8 with Kotlin DSL for build
+- GraalVM for native build
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
 - Renovate for dependencies update
 - GitHub workflow for running tests
 
-Usage:
+## Run application
 
 ```shell
 ./gradlew run
 
 > Task :run
+Hello World!
+```
+
+```shell
+./gradlew nativeRun
+
+> Task :nativeRun
 Hello World!
 ```

@@ -1,6 +1,7 @@
 plugins {
     application
     java
+    id("org.graalvm.buildtools.native")
 }
 
 version = "0.1-SNAPSHOT"
@@ -20,10 +21,19 @@ java {
     targetCompatibility = JavaVersion.VERSION_17
 }
 
-repositories {
-    mavenCentral()
+graalvmNative {
+    toolchainDetection.set(false)
+    binaries {
+        all {
+            resources.autodetect()
+        }
+    }
 }
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
 }
