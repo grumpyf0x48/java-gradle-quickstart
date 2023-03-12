@@ -1,5 +1,11 @@
 package org.grumpyf0x48.myapplication;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import static java.util.stream.Collectors.joining;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -7,6 +13,10 @@ public class Application {
     }
 
     public String getGreeting() {
-        return "Hello World!";
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(this.getClass().getResourceAsStream("/greeting.txt")))) {
+            return reader.lines().filter(line -> !line.isEmpty()).collect(joining("\n"));
+        } catch (IOException exception) {
+            return "Hello World!";
+        }
     }
 }

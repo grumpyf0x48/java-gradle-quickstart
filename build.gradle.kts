@@ -31,4 +31,9 @@ tasks.withType<Test> {
 
 graalvmNative {
     toolchainDetection.set(false)
+    binaries {
+        all {
+            resources.autodetect()
+        }
+    }
 }

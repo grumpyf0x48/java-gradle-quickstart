@@ -2,13 +2,13 @@ package org.grumpyf0x48.myapplication;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ApplicationTest {
 
     @Test
-    void appHasAGreeting() {
+    public void appSaysHello() {
         Application application = new Application();
-        assertNotNull(application.getGreeting(), "application should have a greeting");
+        assertEquals("Hello World!", application.getGreeting());
     }
 }
