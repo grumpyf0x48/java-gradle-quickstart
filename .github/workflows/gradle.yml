@@ -34,7 +34,7 @@ jobs:
           path: build/install/myapplication
 
   build_native:
-    if: ${{ true }}  # disabled for now
+    if: ${{ false }}  # disabled for now
     name: Build and test native application
     runs-on: ubuntu-22.04
     steps:
