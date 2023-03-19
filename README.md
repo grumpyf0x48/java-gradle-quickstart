@@ -11,8 +11,8 @@ application using:
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
-- Renovate for dependencies update
 - GitHub workflow for running tests
+- Renovate for dependencies update
 
 ## Run application
 
