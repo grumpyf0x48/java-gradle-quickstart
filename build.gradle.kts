@@ -23,7 +23,6 @@ java {
 
 distributions {
     main {
-        distributionBaseName.set("myapplication")
     }
 }
 
