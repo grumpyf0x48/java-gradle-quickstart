@@ -53,4 +53,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: gradle_quickstart_native_${{ github.sha }}
-          path: build/install/gradle_quickstart_native
+          path: build/install/gradle_quickstart-native
