@@ -13,7 +13,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("org.grumpyf0x48.java_gradle_quickstart.Application")
+    mainClass.set("org.grumpyf0x48.gradle_quickstart.Application")
 }
 
 java {
@@ -27,7 +27,7 @@ distributions {
     create("native") {
         contents {
             from("${project.buildDir}/native/nativeCompile") {
-                include("java_gradle_quickstart")
+                include("gradle_quickstart")
                 into("bin")
             }
         }
@@ -53,7 +53,7 @@ graalvmNative {
             resources.autodetect()
         }
         named("main") {
-            imageName.set("java_gradle_quickstart")
+            imageName.set("gradle_quickstart")
         }
     }
 }

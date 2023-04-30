@@ -12,4 +12,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "java_gradle_quickstart"
+rootProject.name = "gradle_quickstart"
