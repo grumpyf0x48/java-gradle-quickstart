@@ -24,6 +24,26 @@ java {
 distributions {
     main {
     }
+    create("native") {
+        contents {
+            from("${project.buildDir}/native/nativeCompile") {
+                include("myapplication")
+                into("bin")
+            }
+        }
+    }
+}
+
+tasks.getByName("nativeDistZip") {
+    dependsOn(tasks.nativeCompile)
+}
+
+tasks.getByName("nativeDistTar") {
+    dependsOn(tasks.nativeCompile)
+}
+
+tasks.getByName("installNativeDist") {
+    dependsOn(tasks.nativeCompile)
 }
 
 graalvmNative {
