@@ -15,7 +15,7 @@
 
 ## Rename application
 
-By default, this template creates an application named `myapplication`.
+By default, this template creates an application named `java_gradle_quickstart`.
 
 To rename it, for example to `brand-new-app`, start the following command:
 
