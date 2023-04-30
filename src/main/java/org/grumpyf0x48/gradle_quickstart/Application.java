@@ -1,4 +1,4 @@
-package org.grumpyf0x48.java_gradle_quickstart;
+package org.grumpyf0x48.gradle_quickstart;
 
 import java.io.BufferedReader;
 import java.io.IOException;
