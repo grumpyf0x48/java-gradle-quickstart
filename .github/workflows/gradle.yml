@@ -50,3 +50,7 @@ jobs:
         with:
           # no 'test' here. We trust the ones run in 'build'.
           arguments: nativeDistZip installNativeDist
+      - uses: actions/upload-artifact@v3
+        with:
+          name: myapplication-native-${{ github.sha }}
+          path: build/install/myapplication-native
