@@ -20,8 +20,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: graalvm/setup-graalvm@v1
         with:
-          java-version: ${{ env.JAVA_VERSION }}
           version: ${{ env.GRAALVM_VERSION }}
+          java-version: ${{ env.JAVA_VERSION }}
           components: ${{ env.GRAALVM_COMPONENTS }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           check-for-updates: 'true'
