@@ -3,7 +3,7 @@ help:
 
 update-application: update-files update-java-files ## Update the application
 
-update-files: build.gradle.kts settings.gradle.kts .github/workflows/build.yml ## Update all Gradle files
+update-files: build.gradle.kts settings.gradle.kts .github/workflows/build.yml .github/workflows/native_build.yml ## Update all build files (Gradle and GitHub actions)
 	@for file in $^; do \
 		FILE_NAME="$${file}" make update-file; \
 	done
@@ -13,7 +13,7 @@ update-java-files: $(shell find . -name "*.java") ## Update all Java files
 		FILE_NAME="$${file}" make update-java-file; \
 	done
 
-update-file: check ## Update a Gradle file
+update-file: check ## Update a build file (Gradle and GitHub actions)
 	@sed --in-place "s/$(INITIAL_APPLICATION_NAME)/$(REAL_APPLICATION_NAME)/g" $(FILE_NAME)
 	@git add $(FILE_NAME)
 
