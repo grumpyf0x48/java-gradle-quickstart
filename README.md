@@ -35,7 +35,7 @@ APPLICATION_NAME=brand-new-app \
 Hello World!
 ```
 
-### Natively 
+### Natively
 
 ```shell
 ./gradlew nativeRun
