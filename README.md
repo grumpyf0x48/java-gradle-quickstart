@@ -11,17 +11,19 @@
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
-- GitHub workflow for running tests
+- GitHub workflow for running tests and packaging application distributions
 - Renovate for dependencies update
 
 ## Rename application
 
-By default, this template creates an application named `gradle_quickstart`.
+By default, this template creates an application named `gradle_quickstart` in the package `org.grumpyf0x48`.
 
-To rename it, for example to `brand-new-app`, start the following command:
+Once you have created a repository using this template, you can rename it for example to `brand-new-app` in a package named `org.your.pkg` using the following command:
 
 ```shell
-APPLICATION_NAME=brand-new-app make update-application
+APPLICATION_NAME=brand-new-app \
+    PACKAGE_NAME=org.your.pkg \
+    make update-application
 ```
 
 ## Run application
@@ -32,6 +34,8 @@ APPLICATION_NAME=brand-new-app make update-application
 > Task :run
 Hello World!
 ```
+
+### Natively 
 
 ```shell
 ./gradlew nativeRun
