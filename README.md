@@ -14,7 +14,7 @@
 - GitHub workflow for running tests and packaging application distributions
 - Renovate for dependencies update
 
-## Rename application
+## Rename the application
 
 By default, this template creates an application named `gradle_quickstart` in the package `org.grumpyf0x48`.
 
@@ -26,7 +26,21 @@ APPLICATION_NAME=brand-new-app \
     make update-application
 ```
 
-## Run application
+## Package the application
+
+To package the application, run the following command:
+
+```shell
+./gradlew distZip
+```
+
+## Package the native application
+
+```shell
+./gradlew nativeDistZip
+```
+
+## Run the application
 
 ```shell
 ./gradlew run
@@ -35,7 +49,7 @@ APPLICATION_NAME=brand-new-app \
 Hello World!
 ```
 
-### Natively
+## Run the native application
 
 ```shell
 ./gradlew nativeRun
