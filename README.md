@@ -11,7 +11,7 @@
 - Maven Central for dependencies
 - JUnit 5 for tests
 - EditorConfig for code formatting
-- GitHub workflow for running tests and packaging application distributions
+- GitHub workflow to build, test, package the application and upload its distributions
 - Renovate for dependencies update
 
 ## Rename the application
@@ -44,16 +44,10 @@ To package the application, run the following command:
 
 ```shell
 ./gradlew run
-
-> Task :run
-Hello World!
 ```
 
 ## Run the native application
 
 ```shell
 ./gradlew nativeRun
-
-> Task :nativeRun
-Hello World!
 ```
