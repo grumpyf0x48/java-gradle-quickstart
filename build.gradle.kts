@@ -23,12 +23,10 @@ java {
 }
 
 distributions {
-    main {
-    }
     create("native") {
         contents {
             from("${project.buildDir}/native/nativeCompile") {
-                include("gradle_quickstart")
+                include("${rootProject.name}")
                 into("bin")
             }
         }
@@ -52,9 +50,6 @@ graalvmNative {
     binaries {
         all {
             resources.autodetect()
-        }
-        named("main") {
-            imageName.set("gradle_quickstart")
         }
     }
 }
